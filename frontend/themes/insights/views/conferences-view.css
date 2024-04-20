@@ -1,0 +1,48 @@
+.conferences-view {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.conferences-view .sidebar {
+  width: 21rem;
+}
+
+.conferences-view .search-field {
+  width: 20rem;
+}
+
+.conferences-view .card {
+  width: 16rem;
+  white-space: normal;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+ .conferences-view {
+    flex-direction: column;
+  }
+
+ .conferences-view .sidebar {
+    width: 100%;
+  }
+
+ .conferences-view .sidebar vaadin-scroller {
+    min-height: 10rem;
+  }
+
+ .conferences-view .search-field {
+    width: 100%;
+  }
+
+ .conferences-view .card {
+    width: max-content;
+    min-width: 10rem;
+    padding-right: var(--lumo-space-l);
+  }
+
+ .conferences-view .sidebar .card-list {
+    flex-direction: row;
+    gap: var(--lumo-space-s);
+  }
+}

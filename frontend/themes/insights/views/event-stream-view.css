@@ -1,0 +1,19 @@
+@media screen and (max-width: 740px) {
+ .event-stream-view {
+    flex-direction: column-reverse;
+  }
+ .event-stream-view aside {
+    width: 100% !important;
+    flex-direction: row;
+  }
+ .event-stream-view aside header {
+    display: none;
+  }
+ .event-stream-view aside vaadin-tabs {
+    flex: 1 1 auto;
+    overflow: auto;
+  }
+ .event-stream-view aside vaadin-tabs vaadin-tab.justify-between {
+    justify-content: flex-start;
+  }
+}

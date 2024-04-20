@@ -1,0 +1,20 @@
+logging:
+    level:
+        org:
+            atmosphere: warn
+server:
+    port: ${PORT:8080}
+spring:
+    jpa:
+        defer-datasource-initialization: true
+    mustache:
+        check-template-location: false
+    sql:
+        init:
+            mode: always
+    threads:
+        virtual:
+            enabled: true
+vaadin:
+    allowed-packages: com.vaadin,org.vaadin,dev.hilla,com.javagrunt.web
+    launch-browser: true
